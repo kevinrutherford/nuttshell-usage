@@ -16,6 +16,8 @@ package:
 functions:
   main:
     handler: handler.main
+    environment:
+      SLACK_MESSAGE_URL: ${env:SLACK_MESSAGE_URL}
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
@@ -45,8 +47,4 @@ functions:
 #      - cognitoUserPool:
 #          pool: MyUserPool
 #          trigger: PreSignUp
-
-#    Define function environment variables here
-#    environment:
-#      variable2: value2
 

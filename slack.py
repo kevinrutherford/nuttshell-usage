@@ -3,6 +3,8 @@
 # Proprietary and confidential.
 #
 
+import sys
+sys.path.insert(0, './vendor')
 import requests
 
 class Slack:
